@@ -1,1 +1,66 @@
-<html><body>G R  REDDY</body>></html>
+<html>
+<head>
+
+      <script>
+         function s(val)
+         {
+             document.getElementById("res").value+=val
+         }
+           
+         function solve()
+         {
+             let x = document.getElementById("res").value
+             let y = eval(x)
+             document.getElementById("res").value = y
+         }
+           
+         function ac()
+         {
+             document.getElementById("res").value = ""
+         }
+      </script>
+<style>
+#b{
+background-color:red;
+color:blue;
+}
+#f{
+background-color:skyblue;
+}
+</style>
+
+</head>
+<body>
+<table border='2'>
+<tr>
+<td colspan='3'><input type='text' id="res"></td>
+<td align='center'><input type='button' onclick="ac()" id="f" value="AC"/></td>
+</tr>
+<tr>
+<td align='center'><input type="button" id="b" value="1" onclick="s('1')"/></td>
+<td align='center'><input type="button" id="b" onclick="s('2')" value="2"/></td>
+<td align='center'><input type='button' id="b" onclick="s('3')" value="3"/></td>
+<td align='center'><input type='button' id="f" onclick="s('+')" value="+"/></td>
+</tr>
+<tr>
+<td align='center'><input type='button' id="b" onclick="s('4')" value="4"></td>
+<td align='center'><input type='button' id="b" onclick="s('5')" value="5"></td>
+<td align='center'><input type='button' id="b" onclick="s('6')" value="6"></td>
+<td align='center'><input type='button' id="f" onclick="s('-')" value="-"></td>
+</tr>
+<tr>
+<td align='center'><input type='text' id="b" onclick="s('7')" value="7"></td>
+<td align='center'><input type='button' id="b" onclick="s('8')" value="8"></td>
+<td align='center'><input type='button' id="b" onclick="s('9')" value="9"></td>
+<td align='center'><input type='button' id="f" onclick="s('*')" value="*"></td>
+</tr>
+<tr>
+<td align='center'><input type="button" id="b" value="=" onclick="solve()"/> </td>
+<td align='center'><input type='button' id="b" onclick="s('/')" value="/"></td>
+<td align='center'><input type='button' id="b" onclick="s('%')" value="%"></td>
+<td align='center'><input type='button' id="f" onclick="s('0')" value="0"></td>
+</tr>
+</table>
+</body>
+
+</html>
